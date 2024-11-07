@@ -1,0 +1,13 @@
+def remove_first_occurrences(s):
+    foc = False
+    for char in s:
+        for char_j in s[s.index(char)+1:]:
+            if char == char_j:
+                foc = char
+                break
+    if foc:
+        last_index = s.rindex(foc)
+        return s[:last_index - 1].replace(foc, '') + s[last_index:]
+    return s
+
+print(remove_first_occurrences("abcdbcdb"))
