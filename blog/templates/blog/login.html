@@ -1,0 +1,22 @@
+{% extends "blog/base.html" %}
+
+{% block page_title %}
+    <h2>Blog Posts</h2>
+{% endblock page_title %}
+{% block page_content %}
+    <form method="post">
+    <table>
+        <tr>
+            <th>Login</th>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td><input type="email" name="email"/></td>
+        </tr>
+        <tr>
+            <td>Password</td>
+            <td><input type="password" name="password"/></td>
+        </tr>
+    </table>
+    </form>
+{% endblock page_content %}
